@@ -4,15 +4,15 @@
 int search(const int a[], int n, int key)
 {
     int i = 0;
+    int a[n] = key;
 
     while(1){
-        if(i == n)
-        return -1;
-
         if(a[i] == key)
-        return i;
+        break;;
 
         i++;
+        
+        return i = n ? -1 : i ;
     }
 }
 
@@ -25,7 +25,7 @@ int main(){
 
     scanf("%d", &number);
 
-    int *array = calloc(number, sizeof(int));
+    int *array = calloc(number + 1, sizeof(int));
 
     for(int i = 0 ; i < number ; i++){
         printf("array[%d] : ", i);
